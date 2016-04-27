@@ -1,7 +1,7 @@
 "use strict";
 
 //winston logger
-const Transport = require('winston').Transport,
+let Transport = require('winston').Transport,
     os = require('os');
 
 /**
@@ -47,7 +47,7 @@ class BaseTranport extends Transport {
      * @method addLine
      * @description abstract method,for sub class implement
      */
-    addline() {
+    addLine() {
 
     }
 
@@ -72,7 +72,7 @@ class BaseTranport extends Transport {
             'pid=' + process.pid,
             'level=' + level,
 
-        ]
+        ];
 
         //make fields
         let fields = [

@@ -1,6 +1,6 @@
 "use strict";
 //Base Class for influxdb trabsport
-const BaseTransport = require('./BaseTransport'),
+let BaseTransport = require('./BaseTransport'),
   dgram = require("dgram");
 
 /**

@@ -34,7 +34,7 @@ gulp.task('doc', function() {
 
 //jshint
 gulp.task('hint', function() {
-    return gulp.src(['lib/**/*.js'])
+    return gulp.src(['libs/**/*.js'])
         .pipe(jshint())
         .pipe(jshint.reporter(stylish));
 });
