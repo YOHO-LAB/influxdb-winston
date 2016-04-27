@@ -1,3 +1,27 @@
+
+# influxdb-winston
+
+## What is this?
+
+A InfluxDB transport for winston by TCP or UDP.
+
+
+## Installation
+
+``` bash
+mkdir test-influxdb-winston
+cd test-influxdb-winston
+npm init
+npm install winston -save 
+npm install influxdb-winston -save
+vi app.js
+```
+
+## Useage
+
+`app.js`
+
+```javascript
   var winston = require('winston');
   var influxdb =require('../index');
   var logger = new (winston.Logger)({
@@ -27,3 +51,5 @@
   setTimeout(function(){
     logger.log('info','lalala');
   },1000)
+
+```

@@ -1,13 +1,13 @@
 {
   "name": "influxdb-winston",
   "version": "1.0.0",
-  "description": "",
+  "description": "A InfluxDB transport for winston by TCP or UDP.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "hbomb",
+  "license": "MIT",
   "dependencies": {
     "winston": "^2.2.0"
   }
