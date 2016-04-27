@@ -1,14 +1,32 @@
 {
   "name": "influxdb-winston",
   "version": "1.0.0",
+  "author": "hbomb",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOHO-LAB/influxdb-winston.git"
+  },
   "description": "A InfluxDB transport for winston by TCP or UDP.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha"
   },
-  "author": "hbomb",
-  "license": "MIT",
   "dependencies": {
     "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "expect.js": "*",
+    "gulp": "^3.8.11",
+    "gulp-changed": "^1.3.0",
+    "gulp-doxx": "0.0.4",
+    "gulp-jshint": "^1.10.0",
+    "istanbul": "0.3.17",
+    "jshint-stylish": "^1.0.2",
+    "mocha": "*",
+    "mocha-lcov-reporter": "^1.0.0",
+    "rewire": "*"
   }
 }
