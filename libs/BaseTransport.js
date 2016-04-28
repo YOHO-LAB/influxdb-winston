@@ -68,7 +68,7 @@ class BaseTranport extends Transport {
 
         //make tags
         let tags = [
-            'host=' + os.hostname(),
+        'host=' + os.hostname(),
             'pid=' + process.pid,
             'level=' + level,
 

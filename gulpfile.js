@@ -24,7 +24,7 @@ gulp.task('test-cov', function() {
 gulp.task('doc', function() {
     gulp.src(['libs/**/*.js', 'README.md'])
         .pipe(gulpDoxx({
-            title: 'yo',
+            title: 'influxdb-winston',
             urlPrefix: path.join(__dirname, "docs")
 
         }))

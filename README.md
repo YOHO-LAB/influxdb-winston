@@ -1,6 +1,10 @@
 
 # influxdb-winston
 
+[https://img.shields.io/npm/v/influxdb-winston.svg]
+[![NPM Status](https://img.shields.io/npm/v/influxdb-winston.svg)](https://www.npmjs.com/package/influxdb-winston)
+[![Build Status](https://travis-ci.org/YOHO-LAB/influxdb-winston.svg?branch=master)](https://travis-ci.org/YOHO-LAB/influxdb-winston)
+
 ## What is this?
 
 A InfluxDB transport for winston by TCP or UDP.
