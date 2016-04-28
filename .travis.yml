@@ -2,5 +2,5 @@ language: node_js
 node_js:
   - "4.4.3"
 sudo: false
-script: "npm run-script test-ci"
+script: "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly"
 after_script: "npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls"

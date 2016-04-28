@@ -10,9 +10,7 @@
   "description": "A InfluxDB transport for winston by TCP or UDP.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec",
-    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha"
+    "test": "mocha --reporter spec"
   },
   "dependencies": {
     "winston": "^2.2.0"
