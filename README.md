@@ -1,9 +1,10 @@
 
 # influxdb-winston
 
-[https://img.shields.io/npm/v/influxdb-winston.svg]
 [![NPM Status](https://img.shields.io/npm/v/influxdb-winston.svg)](https://www.npmjs.com/package/influxdb-winston)
 [![Build Status](https://travis-ci.org/YOHO-LAB/influxdb-winston.svg?branch=master)](https://travis-ci.org/YOHO-LAB/influxdb-winston)
+
+[![Coverage Status](https://coveralls.io/repos/github/YOHO-LAB/influxdb-winston/badge.svg?branch=master)](https://coveralls.io/github/YOHO-LAB/influxdb-winston?branch=master)
 
 ## What is this?
 
