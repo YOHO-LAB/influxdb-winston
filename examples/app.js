@@ -1,6 +1,8 @@
-  var winston = require('winston');
-  var influxdb =require('../index');
-  var logger = new (winston.Logger)({
+  "use strict";
+  
+  let winston = require('winston'),
+  influxdb =require('../index'),
+  logger = new (winston.Logger)({
     transports: [
       new (winston.transports.TcpTransport)({ //send by tcp
         level:'info', //logger level
@@ -12,11 +14,13 @@
       new (winston.transports.UdpTransport)({ //send by udp
         level:'debug', //logger level
         host:'192.168.102.162', //influxdb host
-        port:'4444'//influxdb port
+        port:'4444',//influxdb port
+        measurement:'example'
       }),
       new (winston.transports.Console)()
     ]
   });
+  
   logger.log('info', 'Hello distributed log files!','dasda');
   logger.info('Hello again distributed logs');
 
